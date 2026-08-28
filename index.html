@@ -1,5 +1,4 @@
-﻿<!DOCTYPE html>
-<html lang="zh-CN">
+﻿<html lang="zh-CN">
 
 <head>
   <meta charset="utf-8" />
@@ -810,7 +809,6 @@
     /* logo的背景样式 */
     .img-placeholder.has-image {
       /* border: 1px solid var(--rule); */
-
       border: none;
       /* background: var(--bg-soft);*/
       background: transparent;
@@ -1168,7 +1166,7 @@
     }
 
     .slide p:not(.lead):not(.lead-sub) {
-      font-size: 1.3rem !important;
+      font-size: 1.5rem !important;
       line-height: 1.5 !important;
       color: var(--ink) !important;
       font-weight: 400 !important;
@@ -1240,9 +1238,13 @@
       color: var(--ink-dim) !important;
     }
 
-    /* ============ 第25页：中间三张课程卡片 ============ */
+    /* ============ 第26页：中间三张课程卡片 ============ */
     .slide .course-cards .card li {
       color: #ffffff !important;
+    }
+
+    body.light .slide .course-cards .card li {
+      color: #1a1a1e !important;
     }
 
     .slide .course-cards ul.clean li::before {
@@ -1299,14 +1301,14 @@
 
 <body>
   <!--
-  📷 照片替换说明：
-  查找所有 class="img-placeholder" 的 div，将其中 <span>描述文字</span> 替换为：
-  <img src="你的照片路径.jpg" alt="描述文字"/>
-  同时给父 div 添加 class="has-image" 即可适配白底照片样式。
-  示例：
-  <div class="img-placeholder has-image">
-    <img src="images/photo.jpg" alt="组织架构图"/>
-  </div>
+📷 照片替换说明：
+查找所有 class="img-placeholder" 的 div，将其中 <span>描述文字</span> 替换为：
+<img src="你的照片路径.jpg" alt="描述文字"/>
+同时给父 div 添加 class="has-image" 即可适配白底照片样式。
+示例：
+<div class="img-placeholder has-image">
+<img src="images/photo.jpg" alt="组织架构图"/>
+</div>
 -->
   <div class="grid-bg"></div>
   <canvas aria-hidden="true" class="particle-field" id="particleField"></canvas>
@@ -1317,7 +1319,6 @@
   <div class="corner-deco bl"></div>
   <div class="corner-deco br"></div>
   <div aria-hidden="true" class="scan"></div>
-
   <button class="theme-toggle" id="themeToggle" title="切换主题" type="button">
     <svg viewBox="0 0 24 24" id="themeIcon">
       <path
@@ -1326,14 +1327,12 @@
     </svg>
     <span id="themeLabel">明亮</span>
   </button>
-
   <!-- ============================ 幻灯片 1: 封面 ============================ -->
   <div class="slide active" data-chapter="0">
     <div class="img-placeholder has-image anim-pop" data-d="2" style="width:200px; height:200px; margin-bottom:2rem;">
       <img src="./src/img/another/logo.svg" alt="天元智能科学研究院 Logo" />
     </div>
     <div class="eyebrow anim-fade" data-d="1">Tengen Intelligence Institute</div>
-
     <h1 class="title anim-fly" data-d="3">天元智能科学研究院</h1>
     <p class="lead-sub anim-fade" data-d="6" style="margin-top:2.5rem;">
       株洲市 · 株洲高新区 · 中车株洲所 三方共建
@@ -1342,7 +1341,6 @@
       2024年7月注册成立 · 2024年9月19日正式揭牌
     </p>
   </div>
-
   <!-- ============================ 幻灯片 2: 关于我们 ============================ -->
   <div class="slide" data-chapter="0">
     <div class="eyebrow anim-fade" data-d="1">关于我们</div>
@@ -1370,7 +1368,6 @@
       </div>
     </div>
   </div>
-
   <!-- ============================ 幻灯片 3: 组织架构 ============================ -->
   <div class="slide" data-chapter="0">
     <div class="eyebrow anim-fade" data-d="1">组织架构</div>
@@ -1387,12 +1384,10 @@
         data-dark="./src/img/another/architecture_dark_04.png" alt="">
     </div>
   </div>
-
   <!-- ============================ 幻灯片 4: 负责人简介 ============================ -->
   <div class="slide" data-chapter="0">
     <div class="eyebrow anim-fade" data-d="1">负责人简介</div>
     <h2 class="anim-fly" data-d="2">王彧弋 博士</h2>
-
     <div class="two-col-uneven anim-fade" data-d="4" style="margin-top:1.1rem; gap:2.5rem; align-items:stretch;">
       <div>
         <h3 style="margin-bottom:0.9rem;">个人简介</h3>
@@ -1415,7 +1410,6 @@
           </div>
         </div>
       </div>
-
       <div>
         <h3 style="margin-bottom:0.9rem;">研究方向与学术成就</h3>
         <div class="cards" style="margin-top:0; gap:0.9rem;">
@@ -1424,7 +1418,6 @@
             <p style="font-size:1.1rem; line-height:1.55;">专注于人工智能理论、算法与应用研究，深耕网络数据分析、复杂数据结构挖掘及智能推理机制，致力于推动 AI
               技术在工业场景的落地应用。</p>
           </div>
-
           <div class="cards cards-2" style="margin-top:0.9rem; gap:0.9rem;">
             <div class="card anim-pop" data-d="6">
               <div class="card-tag">01 · 科研项目</div>
@@ -1447,7 +1440,6 @@
         </div>
       </div>
     </div>
-
     <div class="anim-fade" data-d="3"
       style="position:absolute; top:0; right:0; height:100%; z-index:-1; pointer-events:none;">
       <img src="./src/img/teams/王彧弋_dark.png" alt="" style="height:100%; display:block">
@@ -1459,21 +1451,18 @@
     <h2 class="medium anim-fly" data-d="2">入实验室</h2>
     <div class="team-layout anim-fade" data-d="4" id="teamLayout"></div>
   </div>
-
   <!-- ============================ 幻灯片 6: 成员分组 ============================ -->
   <div class="slide" data-chapter="0">
     <div class="eyebrow anim-fade" data-d="1">成员分组</div>
     <h2 class="medium anim-fly" data-d="2">研究院成员</h2>
     <div class="team-layout anim-fade" data-d="4" id="memberLayout"></div>
   </div>
-
   <!-- ============================ 幻灯片 7: 合作专家 ============================ -->
   <div class="slide" data-chapter="0">
     <div class="eyebrow anim-fade" data-d="1">合作专家</div>
     <h2 class="anim-fly" data-d="2">专家委员会</h2>
     <div class="expert-grid anim-fade" data-d="4" id="expertGrid"></div>
   </div>
-
   <!-- ============================ 幻灯片 8: 领导关怀 ============================ -->
   <div class="slide" data-chapter="0">
     <div class="eyebrow anim-fade" data-d="1">领导关怀</div>
@@ -1505,7 +1494,6 @@
       </div>
     </div>
   </div>
-
   <!-- ============================ 幻灯片 9: 院士关怀 ============================ -->
   <div class="slide" data-chapter="0">
     <div class="eyebrow anim-fade" data-d="1">院士关怀</div>
@@ -1558,7 +1546,6 @@
       </div>
     </div>
   </div>
-
   <!-- ============================ 幻灯片 10: 主营业务 ============================ -->
   <div class="slide" data-chapter="0">
     <div class="eyebrow anim-fade" data-d="1">主营业务</div>
@@ -1584,7 +1571,6 @@
       </div>
     </div>
   </div>
-
   <!-- ============================ 幻灯片 11: 研究方向 ============================ -->
   <div class="slide" data-chapter="0">
     <div class="eyebrow anim-fade" data-d="1">研究方向</div>
@@ -1616,7 +1602,6 @@
       </div>
     </div>
   </div>
-
   <!-- ============================ 幻灯片 12: 平台构建 - 工程AI创新中心 ============================ -->
   <div class="slide" data-chapter="0">
     <div class="eyebrow anim-fade" data-d="1">平台构建</div>
@@ -1639,7 +1624,6 @@
         style="height:500px; width:auto; justify-self:center; display:block;">
     </div>
   </div>
-
   <!-- ============================ 幻灯片 13: 平台构建 - 花猫社区 & AIGC ============================ -->
   <div class="slide" data-chapter="0">
     <div class="eyebrow anim-fade" data-d="1">平台构建</div>
@@ -1673,7 +1657,6 @@
       </div>
     </div>
   </div>
-
   <!-- ============================ 幻灯片 14: 重点领域 ============================ -->
   <div class="slide" data-chapter="0">
     <div class="eyebrow anim-fade" data-d="1">重点领域</div>
@@ -1701,7 +1684,6 @@
       </div>
     </div>
   </div>
-
   <!-- ============================ 幻灯片 15: 大模型 ============================ -->
   <div class="slide" data-chapter="0">
     <div class="eyebrow anim-fade" data-d="1">大模型</div>
@@ -1734,7 +1716,6 @@
       </div>
     </div>
   </div>
-
   <!-- ============================ 幻灯片 16: 斫轮·灵构大模型 ============================ -->
   <div class="slide" data-chapter="0">
     <div class="eyebrow anim-fade" data-d="1">AI+工业软件</div>
@@ -1751,7 +1732,6 @@
       <img data-light="./src/img/another/page_light_15.png" data-dark="./src/img/another/page_dark_15.png" alt="">
     </div>
   </div>
-
   <!-- ============================ 幻灯片 17: 基于AI的新一代工业CAD ============================ -->
   <div class="slide" data-chapter="0">
     <div class="eyebrow anim-fade" data-d="1">AI+工业软件</div>
@@ -1790,7 +1770,6 @@
       <img data-light="./src/img/another/page_light_16.png" data-dark="./src/img/another/page_dark_16.png" alt="">
     </div>
   </div>
-
   <!-- ============================ 幻灯片 18: 烧结炉温度估计 ============================ -->
   <div class="slide" data-chapter="0">
     <div class="eyebrow anim-fade" data-d="1">工业建模</div>
@@ -1815,10 +1794,8 @@
         style="margin-top:2rem;width:min(80%, 1160px);  min-height:180px;margin-inline:auto">
         <img data-light="./src/img/another/page_light_17.png" data-dark="./src/img/another/page_dark_17.png" alt="">
       </div>
-
     </div>
   </div>
-
   <!-- ============================ 幻灯片 19: 材料性能预测 ============================ -->
   <div class="slide" data-chapter="0">
     <div class="eyebrow anim-fade" data-d="1">工业建模</div>
@@ -1838,7 +1815,6 @@
       <img data-light="./src/img/another/page_light_18.png" data-dark="./src/img/another/page_dark_18.png" alt="">
     </div>
   </div>
-
   <!-- ============================ 幻灯片 20: 产品检测 ============================ -->
   <div class="slide" data-chapter="0">
     <div class="eyebrow anim-fade" data-d="1">工业检测</div>
@@ -1863,7 +1839,6 @@
       </div>
     </div>
   </div>
-
   <!-- ============================ 幻灯片 21: Agent（AI+RPA） ============================ -->
   <div class="slide" data-chapter="0">
     <div class="eyebrow anim-fade" data-d="1">智能体</div>
@@ -1881,7 +1856,6 @@
       </div>
     </div>
   </div>
-
   <!-- ============================ 幻灯片 22: 陶瓷上釉机械臂 ============================ -->
   <div class="slide" data-chapter="0">
     <div class="eyebrow anim-fade" data-d="1">机器人</div>
@@ -1912,7 +1886,6 @@
         style="height:300px; width:auto; justify-self:center; display:block;">
     </div>
   </div>
-
   <!-- ============================ 幻灯片 23: 数据服务工程 ============================ -->
   <div class="slide" data-chapter="0">
     <div class="eyebrow anim-fade" data-d="1">数据服务工程</div>
@@ -1935,7 +1908,6 @@
         style="height:300px; width:auto; justify-self:center; display:block;">
     </div>
   </div>
-
   <!-- ============================ 幻灯片 24: AI+文化 ============================ -->
   <div class="slide" data-chapter="0">
     <div class="eyebrow anim-fade" data-d="1">AI+文化</div>
@@ -1959,14 +1931,12 @@
         style="height:300px; width:auto; justify-self:center; display:block;">
     </div>
   </div>
-
   <!-- ============================ 幻灯片 25: AI影像项目案例 ============================ -->
   <div class="slide" data-chapter="0">
     <div class="eyebrow anim-fade" data-d="1">AI影像项目案例</div>
     <h2 class="medium anim-fly" data-d="2">百花奖短片 · 项目案例</h2>
     <div class="cards cards-3 anim-fade" data-d="4" id="caseGrid" style="margin-top:2rem;"></div>
   </div>
-
   <!-- ============================ 幻灯片 26: AI+培训 ============================ -->
   <div class="slide" data-chapter="0">
     <div class="eyebrow anim-fade" data-d="1">AI+培训</div>
@@ -2000,7 +1970,8 @@
         </ul>
       </div>
     </div>
-    <div class="img-grid anim-fade" data-d="6" style=" margin-inline:auto; grid-template-columns:repeat(3, 1fr);">
+    <div class="img-grid anim-fade" data-d="6"
+      style="width:min(80%, 1000px); margin-inline:auto; grid-template-columns:repeat(3, 1fr);">
       <img src="./src/img/another/page_25_01.png" alt=""
         style="height:300px; width:auto; justify-self:center; display:block;">
       <img src="./src/img/another/page_25_02.png" alt=""
@@ -2009,7 +1980,6 @@
         style="height:300px; width:auto; justify-self:center; display:block;">
     </div>
   </div>
-
   <!-- ============================ 幻灯片 27: 运作模式 ============================ -->
   <div class="slide" data-chapter="0">
     <div class="eyebrow anim-fade" data-d="1">运作模式</div>
@@ -2036,7 +2006,6 @@
       <img data-light="./src/img/another/page_light_26.png" data-dark="./src/img/another/page_dark_26.png" alt="">
     </div>
   </div>
-
   <!-- ============================ 幻灯片 28: 谢谢观看 ============================ -->
   <div class="slide" data-chapter="0">
     <div class="eyebrow anim-fade" data-d="1">Tengen Intelligence Institute</div>
@@ -2047,11 +2016,9 @@
       用人工智能技术引领产业高质量发展
     </p>
   </div>
-
   <div class="page-num" id="pageNum">01 / 28</div>
   <div class="controls-hint">← → 方向键翻页 · F 全屏 · H 隐藏UI</div>
   <div class="progress-bar" id="progress" style="width: 3.7%;"></div>
-
   <script>
     // ============ 团队成员数据（第五页） ============
     // 后续只需更新 teamGroups 数组，或调用 renderTeamLayout(新数组) 重新渲染。
@@ -2084,7 +2051,6 @@
         ]
       }
     ];
-
     // ============ 成员分组数据（第六页） ============
     // 结构同第五页 teamGroups：label 为左侧组名（每项一行），members 为右侧成员。
     const memberGroups = [
@@ -2118,12 +2084,10 @@
     function renderTeamLayout(groups = teamGroups, targetId = 'teamLayout') {
       const layout = document.getElementById(targetId);
       if (!layout) return;
-
       layout.innerHTML = '';
       groups.forEach((group, groupIndex) => {
         const row = document.createElement('div');
         row.className = 'team-row';
-
         const label = document.createElement('div');
         label.className = 'team-category-label';
         (group.label || []).forEach(text => {
@@ -2132,15 +2096,12 @@
           label.appendChild(span);
         });
         row.appendChild(label);
-
         const list = document.createElement('div');
         list.className = 'team-members-list';
-
         (group.members || []).forEach((member, index) => {
           const card = document.createElement('div');
           card.className = 'team-member-card anim-pop';
           card.style.animationDelay = `${0.3 + (groupIndex * 0.15) + index * 0.06}s`;
-
           if (member.photo) {
             const img = document.createElement('img');
             img.className = 'team-member-avatar';
@@ -2153,10 +2114,8 @@
             photo.setAttribute('aria-hidden', 'true');
             card.appendChild(photo);
           }
-
           const info = document.createElement('div');
           info.className = 'team-member-info';
-
           const name = document.createElement('div');
           name.className = 'team-member-name';
           name.textContent = member.name || '待补充';
@@ -2167,23 +2126,19 @@
             name.appendChild(title);
           }
           info.appendChild(name);
-
           if (member.desc) {
             const desc = document.createElement('div');
             desc.className = 'team-member-desc';
             desc.textContent = member.desc;
             info.appendChild(desc);
           }
-
           card.appendChild(info);
           list.appendChild(card);
         });
-
         row.appendChild(list);
         layout.appendChild(row);
       });
     }
-
     renderTeamLayout();
     renderTeamLayout(memberGroups, 'memberLayout');
     // ============ 第24页：AI影像项目案例数据 ============
@@ -2198,11 +2153,9 @@
       { img: './src/img/another/page_24_07.png', title: '金鹰卡通' },
       { img: './src/img/another/page_24_08.png', title: '湖南省第二届职业技能大赛' }
     ];
-
     function renderProjectCases(items = projectCases) {
       const grid = document.getElementById('caseGrid');
       if (!grid) return;
-
       grid.innerHTML = '';
       items.forEach((item, index) => {
         const card = document.createElement('div');
@@ -2211,23 +2164,19 @@
         card.style.alignItems = 'center';
         card.style.gap = '1rem';
         card.style.animationDelay = `${0.3 + index * 0.03}s`;
-
         const img = document.createElement('img');
         img.src = item.img;
         img.alt = item.title || '';
         img.style.height = '150px';
         img.style.width = 'auto';
         img.style.display = 'block';
-
         const title = document.createElement('h4');
         title.style.margin = '0';
         title.textContent = item.title || '';
-
         card.append(img, title);
         grid.appendChild(card);
       });
     }
-
     renderProjectCases();
     // ============ 第6页：专家委员会数据 ============
     const expertMembers = [
@@ -2276,7 +2225,6 @@
     let particles = [];
     let particleFrame = 0;
     let particleDpr = 1;
-
     function resizeParticles() {
       particleDpr = Math.min(window.devicePixelRatio || 1, 2);
       particleCanvas.width = Math.floor(window.innerWidth * particleDpr);
@@ -2284,7 +2232,6 @@
       particleCanvas.style.width = `${window.innerWidth}px`;
       particleCanvas.style.height = `${window.innerHeight}px`;
       particleCtx.setTransform(particleDpr, 0, 0, particleDpr, 0, 0);
-
       const density = reducedMotion.matches ? 0.00007 : 0.00016;
       const count = Math.min(340, Math.max(110, Math.floor(window.innerWidth * window.innerHeight * density)));
       particles = Array.from({ length: count }, () => ({
@@ -2296,12 +2243,10 @@
         phase: Math.random() * Math.PI * 2
       }));
     }
-
     function drawParticles(time = 0) {
       const w = window.innerWidth;
       const h = window.innerHeight;
       particleCtx.clearRect(0, 0, w, h);
-
       const isLight = document.body.classList.contains('light');
       particleCtx.fillStyle = isLight ? 'rgba(220, 100, 20, 0.72)' : 'rgba(232, 227, 214, 0.54)';
       for (const p of particles) {
@@ -2317,7 +2262,6 @@
         particleCtx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
         particleCtx.fill();
       }
-
       particleCtx.globalAlpha = 1;
       const lineColor = isLight ? '210, 90, 10' : '217, 74, 61';
       for (let i = 0; i < particles.length; i++) {
@@ -2339,12 +2283,10 @@
           }
         }
       }
-
       if (!reducedMotion.matches) {
         particleFrame = requestAnimationFrame(drawParticles);
       }
     }
-
     resizeParticles();
     drawParticles();
     window.addEventListener('resize', () => {
@@ -2357,17 +2299,13 @@
       resizeParticles();
       drawParticles();
     });
-
     // ============ 幻灯片导航 ============
     const slides = document.querySelectorAll('.slide');
     const total = slides.length;
     let current = 0;
-
     const pageNum = document.getElementById('pageNum');
     const progress = document.getElementById('progress');
-
     function pad(n) { return String(n).padStart(2, '0'); }
-
     function show(i) {
       slides.forEach((s, idx) => {
         s.classList.toggle('active', idx === i);
@@ -2375,10 +2313,8 @@
       pageNum.textContent = `${pad(i + 1)} / ${pad(total)}`;
       progress.style.width = `${((i + 1) / total) * 100}%`;
     }
-
     function next() { if (current < total - 1) { current++; show(current); } }
     function prev() { if (current > 0) { current--; show(current); } }
-
     document.addEventListener('keydown', e => {
       if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); next(); }
       else if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); prev(); }
@@ -2394,27 +2330,22 @@
         else document.exitFullscreen();
       }
     });
-
     document.addEventListener('click', e => {
       if (e.target.closest('a, button, input, .theme-toggle')) return;
       if (e.clientX > window.innerWidth / 2) next();
       else prev();
     });
-
     show(0);
-
     // ============ 主题切换 ============
     const themeToggle = document.getElementById('themeToggle');
     const themeIcon = document.getElementById('themeIcon');
     const themeLabel = document.getElementById('themeLabel');
-
     function syncThemeImages() {
       const isLight = document.body.classList.contains('light');
       document.querySelectorAll('img[data-light][data-dark]').forEach(img => {
         img.src = isLight ? img.dataset.light : img.dataset.dark;
       });
     }
-
     function setTheme(isLight) {
       if (isLight) {
         document.body.classList.add('light');
@@ -2431,9 +2362,7 @@
       resizeParticles();
       drawParticles();
     }
-
     syncThemeImages();
-
     themeToggle.addEventListener('click', () => {
       const isLight = !document.body.classList.contains('light');
       setTheme(isLight);
